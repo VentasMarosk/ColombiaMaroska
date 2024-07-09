@@ -6,7 +6,7 @@
     <title>Tienda deportiva Maroska</title>
     <style>
         body {
-            background: url('https://github.com/VentasMarosk/RopaDeportiva/blob/b57d331a5cb961d9477b2999ab45d8211fc43249/IMG-20240316-WA0078.jpg?raw=true') no-repeat center center fixed;
+            background: url('https://github.com/VentasMarosk/Maroska/blob/b17675ef05a74e7e52271005ed235165cd42e8fa/1111.jpg?raw=true') no-repeat center center fixed;
             background-size: cover;
             background-color: rgba(0, 0, 0, 0.5); /* Semi-transparente */
             background-blend-mode: overlay;
@@ -32,10 +32,15 @@
             }
         }
 
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
         .product {
-            display: inline-block;
-            width: 200px;
-            margin: 20px;
+            flex: 1 0 200px;
+            margin: 10px;
             border: 2px solid #fff;
             border-radius: 10px;
             overflow: hidden;
@@ -95,30 +100,23 @@
         .floating-ad {
             position: fixed;
             top: 50%;
-            width: 150px;
+            right: 10px;
+            width: 100px;
             height: auto;
             opacity: 0.7; /* Semitransparente */
             transform: translateY(-50%);
         }
 
-        .left-ad {
-            left: 0;
-            margin-left: 10px;
-        }
-
-        .right-ad {
-            right: 0;
-            margin-right: 10px;
-        }
-
         .video-container {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             margin: 20px 0;
         }
 
         .video-container iframe {
-            margin: 0 10px;
+            margin: 10px;
+            flex: 1 0 300px;
         }
 
         .social-buttons {
@@ -198,8 +196,7 @@
 
     <a href="https://wa.me/3165654053" class="whatsapp-button">&#x1F4AC;</a>
 
-    <img src="https://github.com/VentasMarosk/Maroska/blob/927b828d5f7fa7d5268bd784ecfa980837203d9c/zzzzz.png?raw=true" alt="Anuncio Izquierdo" class="floating-ad left-ad">
-    <img src="https://github.com/VentasMarosk/Maroska/blob/927b828d5f7fa7d5268bd784ecfa980837203d9c/zzzzz.png?raw=true" alt="Anuncio Derecho" class="floating-ad right-ad">
+    <img src="https://github.com/VentasMarosk/Maroska/blob/927b828d5f7fa7d5268bd784ecfa980837203d9c/zzzzz.png?raw=true" alt="Anuncio Derecho" class="floating-ad">
     
     <div class="video-container">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/0Sj9JXKlH7E" frameborder="0" allowfullscreen></iframe>
@@ -212,6 +209,7 @@
         <a href="https://www.facebook.com" class="facebook">&#x1F4F7;</a>
         <a href="https://www.instagram.com" class="instagram">&#x1F3A8;</a>
     </div>
+
 
     <div class="location">
         <p>¿Cómo llegar al lugar?</p>
