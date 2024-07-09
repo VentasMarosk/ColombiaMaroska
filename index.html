@@ -65,6 +65,8 @@
             width: 45%;
             margin-bottom: 20px;
             text-align: center;
+            position: relative;
+            overflow: hidden;
         }
 
         .product img {
@@ -72,22 +74,29 @@
             max-width: 250px; /* Tamaño máximo de las imágenes */
             height: auto;
             border-radius: 10px;
+            transition: transform 0.3s ease;
         }
 
-        .whatsapp-link {
-            display: block;
-            margin-top: 10px;
-            padding: 8px 15px;
-            background-color: #25d366;
-            color: white;
-            text-decoration: none;
+        .product:hover img {
+            transform: scale(1.1); /* Efecto de zoom al hacer hover */
+        }
+
+        .buy-button {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #ffcc00;
+            color: black;
+            padding: 8px 16px;
             border-radius: 5px;
-            font-size: 14px;
+            text-decoration: none;
             transition: background-color 0.3s ease;
+            z-index: 1;
         }
 
-        .whatsapp-link:hover {
-            background-color: #128c7e; /* Color de hover */
+        .buy-button:hover {
+            background-color: #e6b800; /* Color de hover */
         }
 
         .contact-buttons {
@@ -135,16 +144,23 @@
     
     <div class="products">
         <div class="product">
+            <a href="#" class="buy-button">Comprar</a>
             <img src="https://github.com/VentasMarosk/RopaDeportiva/blob/b57d331a5cb961d9477b2999ab45d8211fc43249/IMG-20240316-WA0074%20(2).jpg?raw=true" alt="Producto 1">
         </div>
-       
         <div class="product">
+            <a href="#" class="buy-button">Comprar</a>
+            <img src="https://github.com/VentasMarosk/RopaDeportiva/blob/b57d331a5cb961d9477b2999ab45d8211fc43249/IMG-20240316-WA0086.jpg?raw=true" alt="Producto 2">
+        </div>
+        <div class="product">
+            <a href="#" class="buy-button">Comprar</a>
             <img src="https://github.com/VentasMarosk/RopaDeportiva/blob/b57d331a5cb961d9477b2999ab45d8211fc43249/IMG-20240316-WA0085.jpg?raw=true" alt="Producto 3">
         </div>
         <div class="product">
+            <a href="#" class="buy-button">Comprar</a>
             <img src="https://github.com/VentasMarosk/Maroska/blob/e547a459fbc20104a78c1f0636688d7a07a90e1f/111111.jpeg?raw=true" alt="Producto 4">
         </div>
         <div class="product">
+            <a href="#" class="buy-button">Comprar</a>
             <img src="https://github.com/VentasMarosk/Maroska/blob/e547a459fbc20104a78c1f0636688d7a07a90e1f/11111111.jpeg?raw=true" alt="Producto 5">
         </div>
     </div>
@@ -155,6 +171,18 @@
         <iframe width="300" height="200" src="https://www.youtube.com/embed/T-jbYxlf97A" frameborder="0" allowfullscreen></iframe>
     </div>
 
+  <div class="contenido-final">
+    <h2>¿Por qué comprar en Maroska?</h2>
+    <p>En Tienda deportiva Maroska nos dedicamos a ofrecer la mejor calidad en ropa deportiva desde hace más de 10 años. Nuestros clientes siempre regresan debido a nuestro compromiso con la excelencia y la satisfacción del cliente.</p>
+    <p>Visítanos hoy y descubre por qué somos la tienda de deportes preferida en la región. ¡Te esperamos!</p>
+
+    
+  <div class="ubicacion">
+    <h2>Ubicación</h2>
+    <p>Bogotá, San andresito, Calle 9 N 21-49 LOCAL 111</p>
+    <img src="https://github.com/VentasMarosk/Maroska/blob/98bdc2184d3456dda56683be28f2576a3f5ad4a4/1.jpeg?raw=true" alt="Ubicación Maroska">
+  </div>
+    
     <div class="contact-buttons">
         <a href="https://wa.me/3165654053">Contactar por WhatsApp</a>
         <a href="https://www.facebook.com">Visitar en Facebook</a>
@@ -169,5 +197,10 @@
         <p>Calle 9 N 21 49</p>
         <p>Local 111</p>
     </div>
+
+<div class="video-recuadro">
+    <video src="https://github.com/VentasMarosk/Maroska/blob/b7055fb7085bf45156abbfb288a1a1afed8cc777/WhatsApp-Video-2024-07-05-at-9.58.21-PM%20(1).webm?raw=true" controls></video>
+   
+      
 </body>
 </html>
