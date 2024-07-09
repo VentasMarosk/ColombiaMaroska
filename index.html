@@ -21,12 +21,13 @@
             left: 20px; /* Posición en el lado izquierdo */
             background: #25d366;
             color: white;
-            padding: 15px;
-            border-radius: 50%;
+            padding: 10px 15px;
+            border-radius: 5px;
             text-align: center;
-            font-size: 20px;
+            font-size: 16px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
             text-decoration: none;
+            z-index: 999; /* Para asegurarse de que esté sobre otros elementos */
         }
 
         .title {
@@ -49,13 +50,13 @@
 
         .motivational {
             font-size: 1.2em;
-            margin-bottom: 50px;
+            margin-bottom: 30px;
         }
 
         .products {
             display: flex;
-            flex-wrap: wrap;
             justify-content: space-around;
+            flex-wrap: wrap;
             margin: 20px auto;
             max-width: 90%;
         }
@@ -67,11 +68,28 @@
 
         .product img {
             width: 100%;
+            max-width: 300px; /* Tamaño mediano ajustable */
             border-radius: 10px;
         }
 
         .product-description {
             margin-top: 10px;
+        }
+
+        .whatsapp-link {
+            display: block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: #25d366;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: background-color 0.3s ease;
+        }
+
+        .whatsapp-link:hover {
+            background-color: #128c7e; /* Color de hover */
         }
 
         .contact-buttons {
@@ -135,14 +153,17 @@
         <div class="product">
             <img src="https://github.com/VentasMarosk/RopaDeportiva/blob/b57d331a5cb961d9477b2999ab45d8211fc43249/IMG-20240316-WA0074%20(2).jpg?raw=true" alt="Producto 1">
             <div class="product-description">Chaqueta deportiva</div>
+            <a href="https://wa.me/3165654053" class="whatsapp-link">Pídelas aquí</a>
         </div>
         <div class="product">
             <img src="https://github.com/VentasMarosk/RopaDeportiva/blob/b57d331a5cb961d9477b2999ab45d8211fc43249/IMG-20240316-WA0086.jpg?raw=true" alt="Producto 2">
             <div class="product-description">Chaqueta de alta calidad</div>
+            <a href="https://wa.me/3165654053" class="whatsapp-link">Pídelas aquí</a>
         </div>
         <div class="product">
             <img src="https://github.com/VentasMarosk/RopaDeportiva/blob/b57d331a5cb961d9477b2999ab45d8211fc43249/IMG-20240316-WA0085.jpg?raw=true" alt="Producto 3">
             <div class="product-description">Chaqueta deportiva elegante</div>
+            <a href="https://wa.me/3165654053" class="whatsapp-link">Pídelas aquí</a>
         </div>
     </div>
 
