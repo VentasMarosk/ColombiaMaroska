@@ -148,6 +148,29 @@
             max-width: 90%;
             text-align: left;
         }
+
+
+        .title {
+          font-size: 3em;
+          animation: zoomInOut 3s infinite alternate;
+          color: white;
+          text-shadow: 0 0 20px gold, 0 0 30px green, 0 0 40px green;
+          margin-top: 50px;
+          font-family: 'Arial Black', Gadget, sans-serif;
+        }
+
+    @keyframes zoomInOut {
+        0% {
+            transform: scale(1); /* Tamaño inicial */
+        }
+        100% {
+            transform: scale(1.1); /* Tamaño al final de la animación */
+        }
+    }
+
+    /* Otros estilos CSS... */
+
+        
     </style>
 </head>
 <body>
@@ -209,6 +232,6 @@
 <div class="video-recuadro">
     <video src="https://github.com/VentasMarosk/Maroska/blob/b7055fb7085bf45156abbfb288a1a1afed8cc777/WhatsApp-Video-2024-07-05-at-9.58.21-PM%20(1).webm?raw=true" controls></video>
    
-      
+    </div>  
 </body>
 </html>
